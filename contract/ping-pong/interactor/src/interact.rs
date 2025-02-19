@@ -94,7 +94,7 @@ impl PingPongInteract {
 
         interactor.set_current_dir_from_workspace("ping-pong");
         let alice_wallet_address = interactor
-    .register_wallet(Wallet::from_pem_file("./wallet/wallet-owner.pem").unwrap())
+    .register_wallet(Wallet::from_pem_file("../../../wallet/wallet-owner.pem").unwrap())
     .await;
        let mike_wallet_address = interactor.register_wallet(test_wallets::mike()).await;
 
